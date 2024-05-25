@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      border: 5px solid blue;
+      border-image: linear-gradient(to right, red, blue) 1;
+      background-image: url("https://img.freepik.com/free-photo/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative_1258-176762.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714003200&semt=sph");
+      background-size: cover;
+      background-position: center;
+     
+    }
+background-image{
+    opacity:0.8;
+}
+    input {
+      width: 50%;
+      height: 30px;
+      border-radius: 20px;
+    }
+
+    .center input {
+      margin: 0 auto;
+    }
+input{
+    padding-top:20px;
+}
+    header {
+      background-color: #d6d2d2;
+      color: rgb(43, 0, 255);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    div {
+      font-size: larger;
+    }
+
+    a {
+      padding: 20px;
+    }
+
+    section {
+      width: 200px;
+      height: 200px;
+      border: 5px solid;
+      border-image: linear-gradient(to right, red, blue) 1;
+      display: inline-block;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+      background-color:white;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      opacity:;
+    }
+
+    div a img {
+      width: 150px; 
+      height: 150px; 
+    }
+
+    footer {
+      background-color:;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>IBM</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Login</a>
+      <a href="#">Help</a>
+    </nav>
+  </header>
+  <center><input type="text" placeholder="Search..." style="margin: 0 auto;"></center>
+  <center>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/RLQsd41OVc"><img src="https://imagetolink.com/ib/RLQsd41OVc.png" alt="RLQsd41OVc"/></a>
+      </div>
+      <p>Global Countries</p>
+    </section>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/AvOs7VnSME"><img src="https://imagetolink.com/ib/AvOs7VnSME.png" alt="AvOs7VnSME"/></a>
+      </div>
+      <p>America</p>
+    </section>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/nH2kDN4k7x"><img src="https://imagetolink.com/ib/nH2kDN4k7x.png" alt="nH2kDN4k7x"/></a>
+      </div>
+      <p>Japan</p>
+    </section>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/dPNjibshhv"><img src="https://imagetolink.com/ib/dPNjibshhv.png" alt="dPNjibshhv"/></a>
+      </div>
+      <p>Europe</p>
+    </section>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/ubGCn0MLkD"><img src="https://imagetolink.com/ib/ubGCn0MLkD.png" alt="ubGCn0MLkD"/></a>
+      </div>
+      <p>Russia</p>
+    </section>
+  </center>
+  <center>
+    <section>
+      <div>
+        <a href=""><img src="https://imagetolink.com/ib/uYfVrrMkab.png" alt="uYfVrrMkab"/></a>
+      </div>
+      <p>India VS Global Countries</p>
+    </section>
+    <section>
+        <div>
+          <a href="https://imagetolink.com/ib/faOUM2jWCT"><img src="https://imagetolink.com/ib/faOUM2jWCT.png" alt="faOUM2jWCT"/></a>
+        </div>
+        <p>India VS America</p>
+      </section>
+    <section>
+      <div>
+        <a href="https://imagetolink.com/ib/S1gGWW6KWN"><img src="https://imagetolink.com/ib/S1gGWW6KWN.png" alt="S1gGWW6KWN"/></a>
+      </div>
+      <p>India VS Japan</p>
+    </section>
+    <section>
+        <div>
+            <a href="https://imagetolink.com/ib/JnZCLpDZf1"><img src="https://imagetolink.com/ib/JnZCLpDZf1.png" alt="JnZCLpDZf1"/></a>
+        </div>
+        <p>India VS Europe</p>
+      </section>
+      <section>
+        <div>
+          <a href="https://imagetolink.com/ib/q6whJhmVTF"><img src="https://imagetolink.com/ib/q6whJhmVTF.png" alt="q6whJhmVTF"/></a>
+        </div>
+        <p>India VS Russia</p>
+      </section>
+    
+  </center>
+  
+  <footer>
+  
+  </footer>
+  <script>
+    function changeBorderColors() {
+      const sections = document.querySelectorAll('section');
+      const colors = ['red', 'green', 'blue', 'yellow', 'purple']; 
+      let currentColorIndex = 0;
+    
+      sections.forEach(section => {
+        section.style.borderColor = colors[currentColorIndex];
+      });
+    
+      currentColorIndex = (currentColorIndex + 1) % colors.length; 
+    }
+    
+    setInterval(changeBorderColors, 2000); 
+    </script>
+    
+</body>
+</html>
+
